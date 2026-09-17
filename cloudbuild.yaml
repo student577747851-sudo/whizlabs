@@ -1,0 +1,13 @@
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      - app
+      - deploy
+      - app.yaml
+      - --service-account=student577747851@student-01099.iam.gserviceaccount.com
+      - --quiet
+
+timeout: "1600s"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
